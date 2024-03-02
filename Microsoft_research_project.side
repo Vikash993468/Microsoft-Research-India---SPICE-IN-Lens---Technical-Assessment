@@ -1,0 +1,92 @@
+{
+  "id": "95370feb-47a9-48c2-bda9-abaa21d3cb93",
+  "version": "2.0",
+  "name": "Microsoft_research_project",
+  "url": "https://www.ncbi.nlm.nih.gov",
+  "tests": [{
+    "id": "0b20107b-751e-468c-aecc-600d0f7b9aee",
+    "name": "MR_t1",
+    "commands": [{
+      "id": "cf229faf-6c7d-41f1-9ddd-1808160dd3e6",
+      "comment": "",
+      "command": "open",
+      "target": "/pmc/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2a28b3b-bfa1-4209-b341-518f4ce498b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b19b120b-0071-4737-98a6-a14c61f6c093",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Journal List",
+      "targets": [
+        ["linkText=Journal List", "linkText"],
+        ["css=.usa-nav-secondary-links > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Journal List')]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/section/div/nav[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pmc/journals/')]", "xpath:href"],
+        ["xpath=//nav[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Journal List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac7b2299-6f83-4932-acde-6eb2d105d809",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=AACE Clinical Case Reports",
+      "targets": [
+        ["linkText=AACE Clinical Case Reports", "linkText"],
+        ["css=tr:nth-child(3) > td:nth-child(2) > .link", "css:finder"],
+        ["xpath=//a[contains(text(),'AACE Clinical Case Reports')]", "xpath:link"],
+        ["xpath=//div[@id='mc']/div/table/tbody/tr[3]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pmc/journals/3582/')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AACE Clinical Case Reports')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d285a39-d27c-438d-a827-2b3e1fbae2e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .va_middle .arc-issue",
+      "targets": [
+        ["css=tr:nth-child(2) > .va_middle .arc-issue", "css:finder"],
+        ["xpath=//div[@id='mc']/div/table/tbody/tr[2]/td/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pmc/issues/454679/')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d2f5ebe-2c6a-4c08-b556-4f26272181ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PDF–198K",
+      "targets": [
+        ["linkText=PDF–198K", "linkText"],
+        ["css=.rprt:nth-child(3) .view:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'PDF–198K')]", "xpath:link"],
+        ["xpath=//div[@id='mc']/div/div[4]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pmc/articles/PMC10829861/pdf/main.pdf')]", "xpath:href"],
+        ["xpath=//div[4]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'PDF–198K')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f95dc0fc-d289-49fd-b261-6624c9f5a715",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0b20107b-751e-468c-aecc-600d0f7b9aee"]
+  }],
+  "urls": ["https://www.ncbi.nlm.nih.gov/"],
+  "plugins": []
+}
