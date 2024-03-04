@@ -16,6 +16,6 @@ driver.find_element(By.LINK_TEXT, "Journal List").click()
 driver.find_element(By.LINK_TEXT, "AACE Clinical Case Reports").click()
 driver.find_element(By.CSS_SELECTOR, "tr:nth-child(2) > .va_middle .arc-issue").click()
 driver.find_element(By.LINK_TEXT, "PDF–198K").click()
-driver.implicity_wait(10)
+driver.implicitly_wait(10)
 
 driver.close()
